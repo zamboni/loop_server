@@ -40,7 +40,7 @@ describe 'UserSession' do
   context 'existing user' do
 
     before do
-      @user = Factory.create :user
+      @user = FactoryGirl.create :user
       visit login_path
     end
     

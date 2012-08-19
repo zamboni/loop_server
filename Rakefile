@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-RebelFoundation::Application.load_tasks
+MasterApplication::Application.load_tasks

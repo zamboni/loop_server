@@ -1,4 +1,4 @@
-RebelFoundation::Application.routes.draw do
+MasterApplication::Application.routes.draw do
   resources :users do
     put 'update_password'
   end

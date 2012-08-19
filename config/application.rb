@@ -29,7 +29,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module RebelFoundation
+module MasterApplication
   class Application < Rails::Application
 
     # Generators to automatically generate using non-rails standard gems
