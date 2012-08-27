@@ -4,6 +4,14 @@ class UsersController < ApplicationController
     @identity = env['omniauth.identity']
   end
   
+  def create
+    @user = User.create params[:user]
+    respond_to do |format|
+      format.html
+      format.json {render json: {user: @user}.to_json }
+    end
+  end
+
   def forgot_password
     if params[:email]
       @user = User.where(email: params[:email]).first
